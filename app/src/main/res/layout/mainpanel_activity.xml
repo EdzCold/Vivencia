@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/menu_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_action_menu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:paddingRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_logo_toolbar" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lineBar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#00427A"
+        android:orientation="vertical"/>
+
+    <com.learning.profuturo.en501863.vivenciav02.sliderpanel.SliderTwoPane
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sliding_pane_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/menu_tap_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90caf9" />
+
+        <FrameLayout
+            android:id="@+id/content_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.learning.profuturo.en501863.vivenciav02.sliderpanel.SliderTwoPane>
+
+</LinearLayout>

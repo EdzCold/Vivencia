@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/welcome_color_text"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_bienvenido" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="@string/welcome_text" />
+
+    <Button
+        android:id="@+id/welcome_button_continue"
+        android:layout_width="match_parent"
+        android:layout_margin="32dp"
+        android:layout_height="wrap_content"
+        android:background="@color/button_background"
+        android:text="@string/button_continue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2" />
+
+
+</LinearLayout>
