@@ -7,5 +7,8 @@
     <color name="button_background">#FFC000</color>
     <color name="welcome_color_text">#00427A</color>
 
+    <color name="pre_format_blue">#00427A</color>
+
+    <!--#00427A-->
 
 </resources>

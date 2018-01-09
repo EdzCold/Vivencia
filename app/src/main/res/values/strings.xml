@@ -8,7 +8,10 @@
 
     <string name="button_continue"> Continuar </string>
 
-    <!--<string name="info">Realiza tu Verificación de Vivencia de manera más ágil y sencilla a través de esta app. <br/>-->
-        <!--Una vez realizada la verificación recibirás el pago de u pensión. </string>-->
+    <string name="menu_option_1"> Pagina principal </string>
+    <string name="menu_option_2"> Instrucciones </string>
+    <string name="menu_option_3"> Aviso de Privacidad </string>
+    <string name="menu_option_4"> Cerrar Secion </string>
+
 
 </resources>

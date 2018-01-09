@@ -10,7 +10,8 @@
         android:layout_height="?attr/actionBarSize"
         android:background="#FFF">
 
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -19,23 +20,19 @@
                 android:id="@+id/menu_button"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:background="@drawable/ic_action_menu" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
 
-                <ImageView
-                    android:paddingRight="50dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/ic_logo_toolbar" />
-            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_logo_toolbar" />
 
-        </LinearLayout>
+
+        </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
 
@@ -44,10 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:background="#00427A"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
 
-    <com.learning.profuturo.en501863.vivenciav02.sliderpanel.SliderTwoPane
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.learning.profuturo.en501863.vivenciav02.sliderpanel.SliderTwoPane xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/sliding_pane_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
